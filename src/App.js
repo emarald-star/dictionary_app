@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Dictionary App</h1>
-        <main>
+        <h1 className="mt-5">Dictionary 📖</h1>
+        <main className="mt-5">
           <Dictionary />
         </main>
       </header>
