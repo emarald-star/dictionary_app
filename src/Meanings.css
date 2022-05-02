@@ -1,5 +1,8 @@
 
-
+.PartsOfSpeech{
+    border: 1px solid chocolate;
+    margin: 20px;
+}
 .Definition{
     color: rgb(34, 6, 194);
 }
