@@ -1,6 +1,7 @@
 import React from "react";
 import "./Response.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Meanings from "./Meanings";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -20,20 +21,7 @@ export default function Response(props){
                 <h4 className="Phonetic" key={index}> {phonetic.text}
                 </h4>))}
                 
-                {meanings.map((meaning,index)=> (
-                    <div className="PartsOfSpeech" key={index}>
-                    {meaning.partOfSpeech}
-
-                        {meaning.definitions.map((definition,index) => (
-                            <h5 className="Definition" key={index}>
-                                {definition.definition}
-                                <div className="Example">
-                                    {definition.example}
-                                </div>
-                            </h5>
-                        ))}
-                    </div>
-                ) )}
+               <Meanings value = {meanings} />
             </div>
         </div>
     )
