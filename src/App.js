@@ -14,7 +14,7 @@ function App() {
         </main>
       </header>
       <footer>
-        <small>Coded by Ranjana Joshi</small>
+        <small>Coded by Ranjana Joshi, and open sourced on <a href="https://tranquil-haupia-3dda30.netlify.app/">Github</a></small>
       </footer>
     </div>
   );
