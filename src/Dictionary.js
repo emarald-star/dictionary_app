@@ -31,7 +31,7 @@ export default function Dictionary(){
             <div className="form-outline">
                 <input type="search" id="form1" className="form-control" placeholder="Search for a word..." onChange={UpdateKeyword}/> 
             </div>
-            <button type="button" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary">
                 Search
             </button>
         </form>
