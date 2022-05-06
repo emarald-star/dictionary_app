@@ -35,7 +35,7 @@ export default function Dictionary(){
                 Search
             </button>
         </form>
-        )
+        )   
     }
 
     if (result === null) {
