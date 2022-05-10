@@ -4,5 +4,10 @@ ul {
 }
 
 li {
-    color: darkslategrey;
+    font-size: 18px;
+    display: inline;
+    margin: 5px;
+    border: 1px solid rgb(158, 157, 157);
+    padding: 4px 8px;
+    border-radius: 8px;
 }

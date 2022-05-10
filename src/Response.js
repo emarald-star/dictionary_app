@@ -13,18 +13,27 @@ export default function Response(props){
     return(
 
         <div className="Response">
-            <h2 className="Main-word">{props.results.word}   
-            {/* <FontAwesomeIcon icon="fa-solid fa-volume" /> */}
-                
-            </h2>
-            <div>
-                {props.results.phonetics.map((phonetic,index)=>(
-                <h4 className="Phonetic" key={index}> 
-                    <Phonetics data={phonetic} />
-                </h4>))}
-                
-               <Meanings value = {meanings} />
+            <section>
+            <div className="container">
+                <div className="d-flex flex-row">
+                    <div className="col">
+                        <h2 className="Main-word ">{props.results.word}   
+
+                        </h2>
+                    </div>
+                    
+                    <div className="col">
+                        {props.results.phonetics.map((phonetic,index)=>(
+                         <h4 className="Phonetic" key={index}> 
+                            <Phonetics data={phonetic} />
+                        </h4>))}
+                    </div>
+                </div>
             </div>
+            </section>
+                
+            <Meanings value = {meanings} />
+               
         </div>
     )
 }

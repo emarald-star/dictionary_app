@@ -16,6 +16,7 @@ export default function Dictionary(){
     console.log(result)
     function UpdateKeyword(event){
         setkeyword(event.target.value)
+        
     }
 
     function SubmitKeyword(event){
@@ -43,8 +44,11 @@ export default function Dictionary(){
         return(
         
             <div className="Dictionary">
-                <div>What word do you want to look up?</div>
-                <div>{form()}</div>
+                <section>
+                <div className="mt-5">What word do you want to look up?</div>
+                {form()}
+                <small><strong>Suggestions:{ " "}</strong>River,Sunrise,Book,forest,egg...</small>
+                </section>
                 
             </div>
         )
@@ -54,7 +58,10 @@ export default function Dictionary(){
 
         return(
             <div className="Dictionary">
-                <div>{form()}</div>
+                <section>
+                 {form()}
+                 <small><strong>Suggestions:{ " "}</strong>River,Sunrise,Book,forest,egg...</small>
+                 </section>
                 <Response results={result[0]} />
             </div>
         )

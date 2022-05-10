@@ -3,9 +3,31 @@
 form {
     text-align: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 20px auto 1px auto;
+    /* max-width: 80%; */
+    
 }
+
+.Dictionary input {
+    width: 100%;
+    justify-content: center;
+    
+  }
+
+.Dictionary small {
+    font-size: 15px;
+    line-height: 20px;
+    display: block;
+    margin-top: 4px;
+    
+}
+
+
 
 .Dictionary {
     text-align: center;
+    box-sizing: border-box;
+    
+    font-family: Merriweather,serif;
+    
 }

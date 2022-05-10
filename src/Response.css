@@ -1,5 +1,8 @@
-h2 {
-
-text-align: left;
-margin-left: 50px;
+.Response h2 {
+font-weight: bold;
+text-transform: capitalize;
+font-size: 35px;
 }
+
+
+

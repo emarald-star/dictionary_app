@@ -3,21 +3,32 @@ import './App.css';
 import Dictionary from "./Dictionary.js";
 import logo from "./images/logo.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 
 
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
-        <img src={logo} alt="dictionarylogo" className="img-fluids logo" />
-        <main className="mt-5">
+      <div className="Title"> Dictionary 
+        <img src={logo} alt="dictionarylogo" className="img-fluid logo p-2" />
+        </div>
+      
+        <main className="m-5">
           <Dictionary />
         </main>
       </header>
       <footer>
-        <small>Coded by Ranjana Joshi, and open sourced on <a href="https://tranquil-haupia-3dda30.netlify.app/">Github</a></small>
+        <small>Coded by <strong>Ranjana Joshi</strong>,open sourced on <a href="https://tranquil-haupia-3dda30.netlify.app/"><FontAwesomeIcon icon={solid("github-square")} /></a> and hosted on <a href="https://tranquil-haupia-3dda30.netlify.app/"> Netlify</a></small>
       </footer>
+      
+        {/* <FontAwesomeIcon icon={solid('user-secret')} />
+        <FontAwesomeIcon icon={solid('coffee')} />
+        <FontAwesomeIcon icon={brands('twitter')} /> */}
+
+      
     </div>
   );
 }
