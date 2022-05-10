@@ -10,6 +10,7 @@ import Phonetics from "./Phonetics";
 export default function Response(props){
     let meanings = props.results.meanings
     console.log(props.results)
+   
     return(
 
         <div className="Response">

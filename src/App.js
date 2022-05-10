@@ -21,7 +21,7 @@ function App() {
         </main>
       </header>
       <footer>
-        <small>Coded by <strong>Ranjana Joshi</strong>,open sourced on <a href="https://tranquil-haupia-3dda30.netlify.app/"><FontAwesomeIcon icon={solid("github-square")} /></a> and hosted on <a href="https://tranquil-haupia-3dda30.netlify.app/"> Netlify</a></small>
+        <small>Coded by <strong>Ranjana Joshi</strong>,open sourced on <a href="https://tranquil-haupia-3dda30.netlify.app/"><FontAwesomeIcon icon={solid("coffee")} /></a> and hosted on <a href="https://tranquil-haupia-3dda30.netlify.app/"> Netlify</a></small>
       </footer>
       
         {/* <FontAwesomeIcon icon={solid('user-secret')} />

@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Dictionary.css";
 import axios from "axios";
-import Response from "./Response"
+import Response from "./Response";
+
 
 
 
 export default function Dictionary(){
     let [keyword, setkeyword] = useState(" ");
     let[result, setresult] = useState(null);
+    let [response, setResponse] = useState(null);
 
     function handleResponse(response){
     setresult(response.data)
@@ -19,10 +21,15 @@ export default function Dictionary(){
         
     }
 
+    function handleError(response){
+        setResponse(response.data.message);
+        setresult(null);
+    }
+
     function SubmitKeyword(event){
         event.preventDefault()
         let apiurl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-        axios.get(apiurl).then(handleResponse)
+        axios.get(apiurl).then(handleResponse).catch(handleError);
         console.log(apiurl)
     }
 
@@ -63,6 +70,8 @@ export default function Dictionary(){
                  <small><strong>Suggestions:{ " "}</strong>River,Sunrise,Book,forest,egg...</small>
                  </section>
                 <Response results={result[0]} />
+                {response !== null ? <section>{response}</section> : null}
+            
             </div>
         )
     }
