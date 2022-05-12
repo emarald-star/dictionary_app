@@ -5,7 +5,10 @@ import logo from "./images/logo.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+library.add(faGithub);
 
 function App() {
   return (
@@ -21,7 +24,7 @@ function App() {
         </div>
       </header>
       <footer>
-        <small>Coded by <strong>Ranjana Joshi</strong>,open sourced on <a href="https://github.com/emarald-star/dictionary_app.git"><FontAwesomeIcon icon={solid("coffee")} /></a> and hosted on <a href="https://tranquil-haupia-3dda30.netlify.app/"> Netlify</a></small>
+        <small>Coded by <strong>Ranjana Joshi</strong>,open sourced on <a href="https://github.com/emarald-star/dictionary_app.git"><FontAwesomeIcon icon="fa-brands fa-github" /></a> and hosted on <a href="https://tranquil-haupia-3dda30.netlify.app/"> Netlify</a></small>
       </footer>
       
         {/* <FontAwesomeIcon icon={solid('user-secret')} />

@@ -55,7 +55,7 @@ export default function Dictionary(){
                 <section>
                 <div className="mt-5">What word do you want to look up?</div>
                 <div>{form()}</div>
-                <div className="margin mt-1">Suggestions: River,Sunrise,Book,forest,egg...</div>
+                <div className="margin mt-1"><strong>Suggestions: </strong>River,Sunrise,Book,forest,egg...</div>
                 </section>
                 
             </div>

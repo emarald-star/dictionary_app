@@ -431,6 +431,11 @@ footer {
  font-family: 'Hachi Maru Pop', cursive;
 }
 
+footer a {
+
+  color: bisque;
+}
+
 
 .main {
   margin: 2px;
