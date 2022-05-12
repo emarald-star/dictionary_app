@@ -16,9 +16,9 @@ function App() {
         <img src={logo} alt="dictionarylogo" className="img-fluid logo p-2" />
         </div>
       
-        <main className="m-5">
+        <div className="main">
           <Dictionary />
-        </main>
+        </div>
       </header>
       <footer>
         <small>Coded by <strong>Ranjana Joshi</strong>,open sourced on <a href="https://tranquil-haupia-3dda30.netlify.app/"><FontAwesomeIcon icon={solid("coffee")} /></a> and hosted on <a href="https://tranquil-haupia-3dda30.netlify.app/"> Netlify</a></small>

@@ -1,12 +1,12 @@
 .Synonyms {
     margin-top: 5px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 15px;
   }
   
   .Synonyms .synonym {
     color: #476072;
-    font-weight:900;
+    font-weight:bolder;
     font-style: italic;
     padding-left: 40px;
     padding-right: 10px;
@@ -15,7 +15,6 @@
   .Synonyms .synonym-ex {
     font-style: italic;
     color: #476072;
-    padding-left: 10px;
     padding-right: 10px;
     display: inline-block;
     font-weight: lighter;
