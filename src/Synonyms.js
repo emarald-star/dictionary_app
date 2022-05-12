@@ -3,18 +3,18 @@ import "./Synonyms.css";
 
 export default function Synonyms(props){
     
-    if(props.synonyms){
+    if(props.synonyms.length !== 0){
     return(
-        <div className="container">
-        <div className="Synonyms row">
+        <div className="Synonyms">
+                    <span className="synonym">Synonyms: </span>
             {
                 props.synonyms.map((synonym,index)=>(
-                    <div className="col" key={index}>
+                    <span className="synonym-ex" key={index}>
                         {synonym}
-                    </div>
+                    </span>
                 ))
             }
-            </div>
+            
         </div>
 
     )

@@ -1,0 +1,18 @@
+.Examples {
+    
+    color: #476072;
+    font-weight:900;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Example {
+    font-size: 16px;
+    margin-left: 1px;
+    line-height: 20px;
+    color: rgb(79, 79, 85);
+    font-family: cursive;
+    line-height: 10px;
+
+}

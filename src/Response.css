@@ -3,10 +3,16 @@ font-weight: bold;
 text-transform: capitalize;
 font-size: 35px;
 max-width: fit-content;
-
+margin: 1px auto;
+word-wrap: break-word;
 }
 
-
+@media screen and (max-width: 500px) {
+    .Response h2 {
+      font-size: 25px;
+      word-wrap: break-word;
+    }
+  }
 
 
 

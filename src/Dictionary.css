@@ -20,6 +20,8 @@ form {
     line-height: 20px;
     display: block;
     margin-top: 4px;
+    word-wrap: break-word;
+
 
     
     
@@ -30,6 +32,7 @@ form {
     margin-bottom: 100px;
     font-size: small;
     box-sizing: content-box;
+    word-wrap: break-word;
 
 }
 
