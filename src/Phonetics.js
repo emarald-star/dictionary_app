@@ -12,7 +12,7 @@ export default function Phonetics(props){
         );
       }
 
-    if(props.data){
+    if(props.data.text && props.data.audio){
     return(
         <div className="Phonetic">
       

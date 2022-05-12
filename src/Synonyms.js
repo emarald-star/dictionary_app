@@ -5,15 +5,17 @@ export default function Synonyms(props){
     
     if(props.synonyms){
     return(
-        <ul className="Synonyms">
+        <div className="container">
+        <div className="Synonyms row">
             {
                 props.synonyms.map((synonym,index)=>(
-                    <li key={index}>
+                    <div className="col" key={index}>
                         {synonym}
-                    </li>
+                    </div>
                 ))
             }
-        </ul>
+            </div>
+        </div>
 
     )
              

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Dictionary.css";
+
 import axios from "axios";
 import Response from "./Response";
 
@@ -53,8 +54,8 @@ export default function Dictionary(){
             <div className="Dictionary">
                 <section>
                 <div className="mt-5">What word do you want to look up?</div>
-                {form()}
-                <small><strong>Suggestions:{ " "}</strong>River,Sunrise,Book,forest,egg...</small>
+                <div>{form()}</div>
+                <div className="margin mt-1">Suggestions: River,Sunrise,Book,forest,egg...</div>
                 </section>
                 
             </div>

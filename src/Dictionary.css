@@ -1,5 +1,6 @@
 
 
+
 form {
     text-align: center;
     justify-content: center;
@@ -19,15 +20,22 @@ form {
     line-height: 20px;
     display: block;
     margin-top: 4px;
+
+    
     
 }
 
+.Dictionary .margin { 
 
+    margin-bottom: 100px;
+    font-size: small;
+    box-sizing: content-box;
+
+}
 
 .Dictionary {
     text-align: center;
     box-sizing: border-box;
-    
     font-family: Merriweather,serif;
     
 }

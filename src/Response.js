@@ -16,14 +16,14 @@ export default function Response(props){
         <div className="Response">
             <section>
             <div className="container">
-                <div className="d-flex flex-row">
+                <div className="row">
                     <div className="col">
                         <h2 className="Main-word ">{props.results.word}   
 
                         </h2>
                     </div>
                     
-                    <div className="col">
+                    <div className="col box">
                         {props.results.phonetics.map((phonetic,index)=>(
                          <h4 className="Phonetic" key={index}> 
                             <Phonetics data={phonetic} />

@@ -2,7 +2,15 @@
 font-weight: bold;
 text-transform: capitalize;
 font-size: 35px;
+max-width: fit-content;
+
 }
 
 
 
+
+
+.Response .box{
+
+    box-sizing: content-box;
+}

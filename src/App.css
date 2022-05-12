@@ -1,6 +1,9 @@
 body {
   background-color: rgb(194, 132, 16);
 }
+
+
+
 html {
   height: -webkit-fill-available;
 }
@@ -12,7 +15,7 @@ footer{
   display: flex;
   justify-content: center;
   align-self: center;
-  /* max-height: 100px; */
+  min-height: 60px;
   /* margin: 0; */
   position: relative;
   background-color: rgb(20, 15, 15);
@@ -439,11 +442,13 @@ main {
 }
 
 section{
-  margin: 10px;
+  margin: 15px auto;
   border-radius: 6px;
   padding: 20px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+  max-width: 60% ;
+  box-sizing: unset;
 }
 
 
