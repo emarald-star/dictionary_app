@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Dictionary.css";
-
 import axios from "axios";
 import Response from "./Response";
-
+import Photos from "./Photos";
 
 
 
@@ -12,6 +11,7 @@ export default function Dictionary(){
     let [keyword, setkeyword] = useState(" ");
     let[result, setresult] = useState(null);
     let [aresponse, setResponse] = useState(null);
+    let [images, setimages] = useState(null);
 
     function handleResponse(response){
         setresult(response.data)
@@ -33,12 +33,23 @@ export default function Dictionary(){
         console.log(aresponse);
     }
     
+    function handleImage(response){
+        setimages(response.data.photos)
+        console.log(response.data.photos)
+        console.log(response)
+
+    }
 
     function SubmitKeyword(event){
         event.preventDefault()
         let apiurl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiurl).then(handleResponse).catch(handleError);
         console.log(apiurl)
+
+        let imageapikey = '563492ad6f917000010000014a0d80b1cd544bed9916d2f3971d913a';
+        let imgapiurl =   `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+        let headers = {Authorization: `Bearer ${imageapikey}`}
+        axios.get(imgapiurl, {headers: headers}).then(handleImage);
     }
 
     function form(){
@@ -60,10 +71,10 @@ export default function Dictionary(){
         
             <div className="Dictionary">
                 <section>
-                <div className="mt-5">What word do you want to look up?</div>
-                <div>{form()}</div>
-                <div className="margin mt-1"><strong>Suggestions: </strong>River,Sunrise,Book,forest,egg...</div>
-                {aresponse !== null ? <div className="error">{" - "}{aresponse}</div> : null}
+                    <div className="mt-5">What word do you want to look up?</div>
+                    <div>{form()}</div>
+                    <div className="margin mt-1"><strong>Suggestions: </strong>River,Sunrise,Book,forest,egg...</div>
+                    {aresponse !== null ? <div className="error">{" - "}{aresponse}</div> : null}
                 </section>
                 
             </div>
@@ -79,7 +90,7 @@ export default function Dictionary(){
                  <small><strong>Suggestions:{ " "}</strong>River,Sunrise,Book,forest,egg...</small>
                  </section>
                 {result !== null ? <Response results={result[0]} /> : null}
-            
+                {images !== null ? <Photos results={images} /> : null}
             </div>
         )
     }
