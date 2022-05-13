@@ -1,22 +1,30 @@
 .Synonyms {
     margin-top: 5px;
     font-size: 17px;
-    line-height: 15px;
+    line-height: 18px;
+    padding-left: 40px;
+    
   }
   
   .Synonyms .synonym {
     color: #476072;
     font-weight:bolder;
     font-style: italic;
-    padding-left: 40px;
     padding-right: 10px;
+    
   }
   
-  .Synonyms .synonym-ex {
-    font-style: italic;
+   .isOdd {
     color: #476072;
+  }
+   .isEven {
+    color: #0c161d;  }
+
+  .Synonyms .synonym-ex {
     padding-right: 10px;
     display: inline-block;
     font-weight: lighter;
+    margin-left: 10px;
+    font-style: italic;
 
   }

@@ -8,22 +8,6 @@
 .Definition{
     color: rgb(2, 2, 5);
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 20px;
-}
-.Examples {
-    color: #476072;
-    font-weight:900;
-    font-style: italic;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.Example {
-    color: indigo;
-    font-size: 16px;
-    margin-left: 5px;
-    line-height: 20px;
-    color: rgb(79, 79, 85);
-    font-family: cursive;
 }

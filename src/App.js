@@ -4,7 +4,6 @@ import Dictionary from "./Dictionary.js";
 import logo from "./images/logo.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 

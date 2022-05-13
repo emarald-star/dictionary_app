@@ -1,9 +1,11 @@
 
-
-
-html {
-  height: -webkit-fill-available;
+body{
+  max-height: fit-content;
 }
+
+/* html {
+  height: -webkit-fill-available;
+} */
 
 
 footer{

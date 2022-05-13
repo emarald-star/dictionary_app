@@ -4,15 +4,14 @@
 form {
     text-align: center;
     justify-content: center;
-    margin: 20px auto 1px auto;
+    margin: 0px auto 1px auto;
     /* max-width: 80%; */
     
 }
 
-.Dictionary input {
-    width: 100%;
-    justify-content: center;
-    
+.Dictionary .form-control {
+   width: 100%;
+   
   }
 
 .Dictionary small {
@@ -25,6 +24,13 @@ form {
 
     
     
+}
+
+.Dictionary .error {
+
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .Dictionary .margin { 

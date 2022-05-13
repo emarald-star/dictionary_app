@@ -8,7 +8,7 @@ import Phonetics from "./Phonetics";
 
 
 export default function Response(props){
-    let meanings = props.results.meanings
+    let meanings = props.results.meanings;
     console.log(props.results)
    
     return(
@@ -17,7 +17,7 @@ export default function Response(props){
             <section>
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col d-flex align-items-center       ">
                         <h2 className="Main-word ">{props.results.word}   
 
                         </h2>

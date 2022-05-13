@@ -11,10 +11,12 @@ import Response from "./Response";
 export default function Dictionary(){
     let [keyword, setkeyword] = useState(" ");
     let[result, setresult] = useState(null);
-    let [response, setResponse] = useState(null);
+    let [aresponse, setResponse] = useState(null);
 
     function handleResponse(response){
-    setresult(response.data)
+        setresult(response.data)
+        setResponse(null)
+        console.log(response)
     }
     console.log(result)
     function UpdateKeyword(event){
@@ -23,9 +25,14 @@ export default function Dictionary(){
     }
 
     function handleError(response){
-        setResponse(response.data.message);
+        setResponse(response.response.data.message);
         setresult(null);
+        console.log(response);
+        console.log(response.response.data.message);
+        console.log(response.response.data.status);
+        console.log(aresponse);
     }
+    
 
     function SubmitKeyword(event){
         event.preventDefault()
@@ -56,6 +63,7 @@ export default function Dictionary(){
                 <div className="mt-5">What word do you want to look up?</div>
                 <div>{form()}</div>
                 <div className="margin mt-1"><strong>Suggestions: </strong>River,Sunrise,Book,forest,egg...</div>
+                {aresponse !== null ? <div className="error">{" - "}{aresponse}</div> : null}
                 </section>
                 
             </div>
@@ -70,8 +78,7 @@ export default function Dictionary(){
                  {form()}
                  <small><strong>Suggestions:{ " "}</strong>River,Sunrise,Book,forest,egg...</small>
                  </section>
-                <Response results={result[0]} />
-                {response !== null ? <section>{response}</section> : null}
+                {result !== null ? <Response results={result[0]} /> : null}
             
             </div>
         )
